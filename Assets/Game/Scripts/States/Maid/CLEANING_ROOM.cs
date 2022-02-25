@@ -1,0 +1,52 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+
+namespace States.MaidState
+{
+    public class CLEANING_ROOM : State
+    {
+        private MaidAI maid;
+        private Room room;
+        
+
+        public CLEANING_ROOM(MaidAI maid) : base()
+        {
+            this.maid = maid;
+        }
+
+        public override bool CanEnter<Customer>(Customer customer)
+        {
+            return customer.State.GetType() == typeof(GOING_TO_ROOM);
+        }
+
+        public override void OnEnter()
+        {
+            
+        }
+
+        public override void OnExit()
+        {
+            room = null;
+            
+        }
+
+        public override void OnTriggerEnter(Collider other)
+        {
+        }
+
+        public override void OnTriggerExit(Collider other)
+        {
+        }
+
+        public override void OnUpdate()
+        {
+
+        }
+        public void SetRoom(Room room)
+        {
+            this.room = room;
+        }
+
+    }
+}

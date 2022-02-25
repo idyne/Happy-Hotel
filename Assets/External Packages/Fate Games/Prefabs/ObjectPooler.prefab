@@ -1,0 +1,73 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1941433808929513372
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 5092055917970365202}
+  - component: {fileID: 5232601774650384272}
+  m_Layer: 0
+  m_Name: ObjectPooler
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &5092055917970365202
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1941433808929513372}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &5232601774650384272
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1941433808929513372}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 449765a84decdaf4aacbd8f64be9dd96, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pools:
+  - tag: Confetti Blast
+    prefab: {fileID: 5630113802815259874, guid: 2388c21a584814442b7fb8c8e04fcec6, type: 3}
+    size: 5
+  - tag: Confetti Directional
+    prefab: {fileID: 5630113802815259874, guid: 50a740acafe5d3546bc2a3104972e82b, type: 3}
+    size: 5
+  - tag: Customer
+    prefab: {fileID: 1627876052456632552, guid: 32ed28bb8a5129e4cafe295131cd074d, type: 3}
+    size: 10
+  - tag: Clean Sheet
+    prefab: {fileID: 7135977149789724790, guid: 82f93334d2f71ce4686384786f8b1319, type: 3}
+    size: 10
+  - tag: Money
+    prefab: {fileID: 6898263910264504794, guid: 1a2f66cff393e5741a1847d833dacf38, type: 3}
+    size: 160
+  - tag: Receptionist
+    prefab: {fileID: 1627876052456632552, guid: cbf7ce409ac45ef4baaa3dc5f5466a0f, type: 3}
+    size: 1
+  - tag: Cashier
+    prefab: {fileID: 1627876052456632552, guid: d178ac63a2621c841b7f1e263a2553be, type: 3}
+    size: 1
+  - tag: Maid
+    prefab: {fileID: 7044547777103101874, guid: e58f10c05d74672408b9d024a67058ee, type: 3}
+    size: 3
+  - tag: Money Image
+    prefab: {fileID: 5979296647353876984, guid: a00d96c954f91224ab23db66a47354ae, type: 3}
+    size: 100
